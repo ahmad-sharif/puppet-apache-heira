@@ -1,0 +1,7 @@
+<VirtualHost *: <%= @port -%>>
+        ServerName <%= @servername %>
+        ServerAdmin ahmad@web.com
+        DocumentRoot <%= @document_root %>
+        ErrorLog <%= @log_dir -%>/<%= @servername -%>-error.log
+        CustomLog <%= @log_dir -%>/<%= @servername -%>-access.log combined
+</VirtualHost>
